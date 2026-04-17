@@ -3,74 +3,116 @@ global $site;
 $theme_url = get_template_directory_uri();
 ?>
 
-<section class="projects-section bg-black" id="projects">
+<section class="projects-section bg-black gentleman-services-section" id="projects">
     <div class="container px-4 px-lg-5">
-        <div class="text-center mb-5">
-            <p class="section-kicker">Servicios insignia</p>
-            <h2 class="contact-title">Rituales de barberia</h2>
+        <div class="gentleman-section-heading">
+            <div>
+                <p class="section-kicker">Rituales insignia</p>
+                <h2 class="contact-title">Servicios que se sienten como una casa de barberia de verdad</h2>
+            </div>
             <p class="contact-subtitle">
-                Creamos un servicio que combina tecnica, hospitalidad y presencia. Cada cita esta pensada para que salgas impecable y con una sensacion de calma dificil de reemplazar.
+                La seccion ahora se comporta como una carta de experiencias. Cada bloque comunica atmosfera, tecnica y resultado para que el usuario imagine la cita antes de reservar.
             </p>
         </div>
 
-        <section class="catalogo">
-            <div class="grid">
-                <div class="item" onclick="abrirModal('modal1')">
+        <div class="gentleman-service-grid">
+            <article class="gentleman-service-card" onclick="abrirModal('modal1')">
+                <div class="gentleman-service-media">
                     <img src="<?php echo $theme_url; ?>/assets/img/bg2.jpg" alt="Corte clasico realizado por un barbero profesional" loading="lazy">
-                    <div class="overlay">
-                        <span>+</span>
-                    </div>
-                    <h3 class="contact-subtitle"><?php echo $site['project_one_title']; ?></h3>
                 </div>
+                <div class="gentleman-service-copy">
+                    <span class="gentleman-service-tag">Signature Cut</span>
+                    <h3><?php echo $site['project_one_title']; ?></h3>
+                    <p><?php echo $site['project_one_text']; ?></p>
+                    <button class="gentleman-service-trigger" type="button">Descubrir el ritual</button>
+                </div>
+            </article>
 
-                <div class="item" onclick="abrirModal('modal2')">
+            <article class="gentleman-service-card gentleman-service-card-offset" onclick="abrirModal('modal2')">
+                <div class="gentleman-service-media">
                     <img src="<?php echo $theme_url; ?>/assets/img/bg3.jpg" alt="Herramientas de barberia para perfilado y detalle" loading="lazy">
-                    <div class="overlay">
-                        <span>+</span>
-                    </div>
-                    <h3 class="contact-subtitle"><?php echo $site['project_two_title']; ?></h3>
                 </div>
+                <div class="gentleman-service-copy">
+                    <span class="gentleman-service-tag">Beard Tailoring</span>
+                    <h3><?php echo $site['project_two_title']; ?></h3>
+                    <p><?php echo $site['project_two_text']; ?></p>
+                    <button class="gentleman-service-trigger" type="button">Ver detalle del servicio</button>
+                </div>
+            </article>
 
-                <div class="item" onclick="abrirModal('modal3')">
+            <article class="gentleman-service-card" onclick="abrirModal('modal3')">
+                <div class="gentleman-service-media">
                     <img src="<?php echo $theme_url; ?>/assets/img/hot-towel.jpg" alt="Ritual clasico de hot towel shave en barberia" loading="lazy">
-                    <div class="overlay">
-                        <span>+</span>
+                </div>
+                <div class="gentleman-service-copy">
+                    <span class="gentleman-service-tag">House Ritual</span>
+                    <h3><?php echo $site['project_three_title']; ?></h3>
+                    <p><?php echo $site['project_three_text']; ?></p>
+                    <button class="gentleman-service-trigger" type="button">Abrir experiencia completa</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="modal gentleman-modal" id="modal1">
+            <div class="modal-content gentleman-modal-content">
+                <button class="close" type="button" onclick="cerrarModal('modal1')" aria-label="Cerrar">&times;</button>
+                <div class="gentleman-modal-frame">
+                    <div class="gentleman-modal-copy">
+                        <span class="gentleman-modal-label">Signature Cut</span>
+                        <h2><?php echo $site['project_one_title']; ?></h2>
+                        <p><?php echo $site['project_one_text']; ?></p>
+                        <ul class="gentleman-modal-list">
+                            <li>Consulta de estilo segun rostro, textura y rutina.</li>
+                            <li>Transiciones limpias, contornos precisos y acabado elegante.</li>
+                            <li>Ideal para una imagen sobria y segura todos los dias.</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-subtitle"><?php echo $site['project_three_title']; ?></h3>
+                    <div class="gentleman-modal-media">
+                        <img src="<?php echo $theme_url; ?>/assets/img/bg2.jpg" alt="Servicio de corte clasico" loading="lazy">
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <div class="text-center mt-5">
-            <p class="contact-subtitle">
-                Nuestro espacio esta diseñado para que el tiempo se sienta distinto: musica sobria, materiales nobles y una atencion que prioriza el detalle sobre la prisa.
-            </p>
         </div>
 
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModal('modal1')">&times;</span>
-                <h2><?php echo $site['project_one_title']; ?></h2>
-                <img src="<?php echo $theme_url; ?>/assets/img/bg2.jpg" alt="Servicio de corte clasico" loading="lazy">
-                <p><?php echo $site['project_one_text']; ?></p>
+        <div class="modal gentleman-modal" id="modal2">
+            <div class="modal-content gentleman-modal-content">
+                <button class="close" type="button" onclick="cerrarModal('modal2')" aria-label="Cerrar">&times;</button>
+                <div class="gentleman-modal-frame">
+                    <div class="gentleman-modal-copy">
+                        <span class="gentleman-modal-label">Beard Tailoring</span>
+                        <h2><?php echo $site['project_two_title']; ?></h2>
+                        <p><?php echo $site['project_two_text']; ?></p>
+                        <ul class="gentleman-modal-list">
+                            <li>Perfilado visualmente balanceado con la estructura facial.</li>
+                            <li>Definicion de lineas, limpieza y control de volumen.</li>
+                            <li>Un resultado sobrio que se nota sin verse excesivo.</li>
+                        </ul>
+                    </div>
+                    <div class="gentleman-modal-media">
+                        <img src="<?php echo $theme_url; ?>/assets/img/bg3.jpg" alt="Herramientas de barberia para perfilado" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="modal" id="modal2">
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModal('modal2')">&times;</span>
-                <h2><?php echo $site['project_two_title']; ?></h2>
-                <img src="<?php echo $theme_url; ?>/assets/img/bg3.jpg" alt="Herramientas de barberia para perfilado" loading="lazy">
-                <p><?php echo $site['project_two_text']; ?></p>
-            </div>
-        </div>
-
-        <div class="modal" id="modal3">
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModal('modal3')">&times;</span>
-                <h2><?php echo $site['project_three_title']; ?></h2>
-                <img src="<?php echo $theme_url; ?>/assets/img/hot-towel.jpg" alt="Ritual de afeitado con toalla caliente" loading="lazy">
-                <p><?php echo $site['project_three_text']; ?></p>
+        <div class="modal gentleman-modal" id="modal3">
+            <div class="modal-content gentleman-modal-content">
+                <button class="close" type="button" onclick="cerrarModal('modal3')" aria-label="Cerrar">&times;</button>
+                <div class="gentleman-modal-frame">
+                    <div class="gentleman-modal-copy">
+                        <span class="gentleman-modal-label">House Ritual</span>
+                        <h2><?php echo $site['project_three_title']; ?></h2>
+                        <p><?php echo $site['project_three_text']; ?></p>
+                        <ul class="gentleman-modal-list">
+                            <li>Toalla caliente, espuma rica y navaja con ritmo preciso.</li>
+                            <li>Una experiencia pensada para bajar el pulso y subir la presencia.</li>
+                            <li>Perfecto para quien quiere verse impecable y salir renovado.</li>
+                        </ul>
+                    </div>
+                    <div class="gentleman-modal-media">
+                        <img src="<?php echo $theme_url; ?>/assets/img/hot-towel.jpg" alt="Ritual de afeitado con toalla caliente" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

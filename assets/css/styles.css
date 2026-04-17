@@ -13319,3 +13319,562 @@ h4, .h4,
   margin-right: auto;
   text-align: center;
 }
+
+/* ==========================================================
+   GENTLEMAN REFRAME 2026
+   ========================================================== */
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(185, 150, 91, 0.08) 0%, rgba(185, 150, 91, 0) 28%),
+    linear-gradient(180deg, #060504 0%, #0d0a08 28%, #15100d 62%, #1a130f 100%) !important;
+}
+
+#mainNav.gentleman-navbar {
+  padding: 1rem 0;
+}
+
+#mainNav.gentleman-navbar.navbar-shrink {
+  padding: 0.65rem 0;
+}
+
+.gentleman-nav-shell {
+  background: rgba(13, 10, 8, 0.88);
+  border: 1px solid rgba(185, 150, 91, 0.16);
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.gentleman-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.gentleman-brand-copy {
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.gentleman-brand-copy strong {
+  color: #fff7eb;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gentleman-brand-copy small {
+  color: rgba(242, 227, 200, 0.64);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+
+.gentleman-nav-collapse {
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.gentleman-nav-links {
+  gap: 0.3rem;
+}
+
+#mainNav .gentleman-nav-links .nav-link {
+  color: rgba(242, 227, 200, 0.82);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.72rem 0.95rem;
+  border-radius: 999px;
+}
+
+#mainNav .gentleman-nav-links .nav-link:hover,
+#mainNav .gentleman-nav-links .nav-link.active {
+  color: #fff7eb;
+  background: rgba(185, 150, 91, 0.12);
+}
+
+.gentleman-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.76rem 1.15rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(185, 150, 91, 0.94) 0%, rgba(106, 76, 44, 0.98) 100%);
+  border: 1px solid rgba(217, 189, 136, 0.34);
+  color: #fff7eb;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 700;
+  box-shadow: 0 12px 26px rgba(93, 65, 29, 0.24);
+}
+
+.gentleman-nav-cta:hover {
+  color: #fff7eb;
+}
+
+.gentleman-nav-toggle {
+  border: 1px solid rgba(185, 150, 91, 0.18);
+  border-radius: 14px;
+  padding: 0.5rem 0.72rem;
+}
+
+.gentleman-nav-toggle .navbar-toggler-icon {
+  filter: invert(0.92) sepia(0.12);
+}
+
+.gentleman-hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 11rem 0 4rem;
+  background:
+    linear-gradient(110deg, rgba(5, 4, 4, 0.92) 0%, rgba(8, 6, 5, 0.7) 42%, rgba(8, 6, 5, 0.28) 100%),
+    url('../img/bg1.jpg') center/cover no-repeat;
+}
+
+.gentleman-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 75% 24%, rgba(255, 224, 168, 0.1) 0%, rgba(255, 224, 168, 0) 26%),
+    linear-gradient(180deg, rgba(7, 6, 5, 0.14) 0%, rgba(7, 6, 5, 0.62) 100%);
+  pointer-events: none;
+}
+
+.gentleman-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.gentleman-hero-copy {
+  max-width: 620px;
+}
+
+.gentleman-hero .hero-title {
+  margin-bottom: 1.2rem;
+}
+
+.gentleman-hero .hero-subtitle {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 560px;
+  text-align: left;
+  line-height: 1.9;
+}
+
+.gentleman-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gentleman-link {
+  color: #f7eddc;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+}
+
+.gentleman-link:hover {
+  color: #fff7eb;
+}
+
+.gentleman-hero-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.gentleman-card-main {
+  min-height: 360px;
+  padding: 1.8rem;
+  border-radius: 28px;
+  border: 1px solid rgba(185, 150, 91, 0.18);
+  background:
+    linear-gradient(180deg, rgba(14, 10, 8, 0.28) 0%, rgba(14, 10, 8, 0.84) 100%),
+    url('../img/hot-towel.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.22);
+}
+
+.gentleman-card-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: auto;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  border: 1px solid rgba(217, 189, 136, 0.24);
+  background: rgba(13, 10, 8, 0.52);
+  color: #f8efdf;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.gentleman-card-main h2 {
+  color: #fff7eb;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.gentleman-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gentleman-mini-card {
+  min-height: 150px;
+  padding: 1.25rem;
+  border-radius: 22px;
+  background: rgba(18, 13, 10, 0.82);
+  border: 1px solid rgba(185, 150, 91, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gentleman-mini-card span {
+  color: rgba(242, 227, 200, 0.6);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gentleman-mini-card strong {
+  color: #fff4df;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.gentleman-marquee {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(185, 150, 91, 0.16);
+}
+
+.gentleman-marquee span {
+  color: rgba(242, 227, 200, 0.76);
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gentleman-about-section {
+  padding: 6rem 0 3rem;
+}
+
+.gentleman-about-panel {
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(17, 13, 10, 0.92) 0%, rgba(12, 9, 7, 0.82) 100%);
+  border: 1px solid rgba(185, 150, 91, 0.14);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gentleman-about-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  height: 100%;
+}
+
+.gentleman-about-card {
+  padding: 1.4rem 1.3rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(185, 150, 91, 0.12);
+}
+
+.gentleman-about-card span {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  color: #f0dbc0;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gentleman-about-card p {
+  margin: 0;
+  color: rgba(242, 227, 200, 0.78);
+  line-height: 1.8;
+}
+
+.gentleman-about-card-wide {
+  grid-column: 1 / -1;
+}
+
+.gentleman-services-section {
+  padding: 4rem 0 6rem;
+}
+
+.gentleman-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+.gentleman-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+
+.gentleman-service-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(15, 11, 9, 0.98) 0%, rgba(10, 8, 6, 0.88) 100%);
+  border: 1px solid rgba(185, 150, 91, 0.16);
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.gentleman-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.28);
+  border-color: rgba(217, 189, 136, 0.26);
+}
+
+.gentleman-service-card-offset {
+  transform: translateY(2rem);
+}
+
+.gentleman-service-card-offset:hover {
+  transform: translateY(calc(2rem - 6px));
+}
+
+.gentleman-service-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 6 !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gentleman-service-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  flex: 1;
+  padding: 1.35rem 1.3rem 1.5rem;
+}
+
+.gentleman-service-tag {
+  color: rgba(242, 227, 200, 0.64);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gentleman-service-copy h3 {
+  color: #fff4df !important;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.gentleman-service-copy p {
+  margin: 0;
+  color: rgba(242, 227, 200, 0.76);
+  line-height: 1.8;
+}
+
+.gentleman-service-trigger {
+  margin-top: auto;
+  min-height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(185, 150, 91, 0.18);
+  background: rgba(185, 150, 91, 0.06);
+  color: #fff4df;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+}
+
+.gentleman-modal {
+  background: rgba(5, 4, 3, 0.82) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.gentleman-modal-content {
+  width: min(92%, 1040px) !important;
+  max-width: 1040px !important;
+  padding: 1rem !important;
+  border-radius: 30px !important;
+  text-align: left !important;
+  background: linear-gradient(180deg, #17120f 0%, #0d0a08 100%) !important;
+  border: 1px solid rgba(185, 150, 91, 0.22) !important;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.42) !important;
+}
+
+.gentleman-modal-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.gentleman-modal-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0.5rem 1rem 0.9rem;
+}
+
+.gentleman-modal-label {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(185, 150, 91, 0.08);
+  border: 1px solid rgba(185, 150, 91, 0.18);
+  color: #f2dfbf;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gentleman-modal-content h2,
+.gentleman-modal-content p {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  max-width: none;
+}
+
+.gentleman-modal-content h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.gentleman-modal-content p {
+  line-height: 1.9;
+}
+
+.gentleman-modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.35rem 0 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.gentleman-modal-list li {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(185, 150, 91, 0.12);
+  color: rgba(242, 227, 200, 0.82);
+  line-height: 1.7;
+}
+
+.gentleman-modal-media img {
+  display: block;
+  width: 100% !important;
+  height: 100%;
+  min-height: 460px;
+  aspect-ratio: auto !important;
+  object-fit: cover;
+  margin: 0 !important;
+  border-radius: 22px !important;
+  border: 1px solid rgba(185, 150, 91, 0.14);
+}
+
+.gentleman-modal .close {
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(185, 150, 91, 0.08) !important;
+  border: 1px solid rgba(185, 150, 91, 0.14);
+}
+
+@media (max-width: 991.98px) {
+  .gentleman-nav-collapse {
+    margin-top: 1rem;
+    align-items: stretch;
+  }
+
+  .gentleman-nav-cta {
+    width: 100%;
+  }
+
+  .gentleman-hero {
+    min-height: auto;
+    padding-top: 9.5rem;
+  }
+
+  .gentleman-marquee,
+  .gentleman-section-heading,
+  .gentleman-service-grid,
+  .gentleman-modal-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .gentleman-service-card-offset,
+  .gentleman-service-card-offset:hover {
+    transform: none;
+  }
+
+  .gentleman-modal-media img {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gentleman-nav-shell {
+    padding: 0.82rem 0.9rem;
+  }
+
+  .gentleman-hero-actions {
+    align-items: stretch;
+  }
+
+  .gentleman-hero-actions .btn,
+  .gentleman-hero-actions .gentleman-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gentleman-hero-grid,
+  .gentleman-about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gentleman-modal-content {
+    width: min(94%, 1040px) !important;
+    padding: 0.8rem !important;
+  }
+
+  .gentleman-modal-copy {
+    padding: 0.5rem 0.15rem 0.25rem;
+  }
+}

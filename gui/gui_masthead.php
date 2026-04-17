@@ -2,55 +2,46 @@
 global $site;
 ?>
 
-<header class="masthead p-0" id="page-top">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="hero-slide slide-1 d-flex align-items-center justify-content-center text-center">
-                    <div class="hero-content">
-                        <p class="hero-eyebrow">Barberia clasica</p>
-                        <h1 class="text-uppercase hero-title"><?php echo $site['hero_title'] ?? 'The Gentleman Barber House'; ?></h1>
-                        <h2 class="hero-subtitle text-white-50 mt-3 mb-5"><?php echo $site['hero_subtitle'] ?? ''; ?></h2>
-                        <a class="btn btn-primary" href="#projects">Descubrir rituales</a>
+<header class="masthead gentleman-hero" id="page-top">
+    <div class="container px-4 px-lg-5">
+        <div class="row align-items-center g-4 g-xl-5">
+            <div class="col-lg-6">
+                <div class="gentleman-hero-copy">
+                    <p class="hero-eyebrow">Barberia clasica refinada</p>
+                    <h1 class="hero-title"><?php echo $site['hero_title'] ?? 'The Gentleman Barber House'; ?></h1>
+                    <p class="hero-subtitle"><?php echo $site['hero_subtitle'] ?? ''; ?></p>
+                    <div class="gentleman-hero-actions">
+                        <a class="btn btn-primary" href="#contact">Reservar ahora</a>
+                        <a class="gentleman-link" href="#projects">Ver rituales</a>
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <div class="hero-slide slide-2 d-flex align-items-center justify-content-center text-center">
-                    <div class="hero-content">
-                        <p class="hero-eyebrow">Precision y porte</p>
-                        <h1 class="text-uppercase hero-title">Cortes con caracter</h1>
-                        <h2 class="hero-subtitle text-white-50 mt-3 mb-5">Asesoria de estilo, ejecucion limpia y acabados pensados para un look distinguido.</h2>
-                        <a class="btn btn-primary" href="#contact">Reservar cita</a>
+            <div class="col-lg-6">
+                <div class="gentleman-hero-stack">
+                    <div class="gentleman-hero-card gentleman-card-main">
+                        <span class="gentleman-card-badge">House Signature</span>
+                        <h2>El porte clasico vuelve a sentirse actual cuando el detalle se ejecuta con calma.</h2>
                     </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="hero-slide slide-3 d-flex align-items-center justify-content-center text-center">
-                    <div class="hero-content">
-                        <p class="hero-eyebrow">Ritual tradicional</p>
-                        <h1 class="text-uppercase hero-title">Afeitado premium</h1>
-                        <h2 class="hero-subtitle text-white-50 mt-3 mb-5">Toalla caliente, espuma y navaja para una experiencia sobria, relajante y memorable.</h2>
-                        <a class="btn btn-primary" href="#about">Conocer la casa</a>
+                    <div class="gentleman-hero-grid">
+                        <article class="gentleman-mini-card">
+                            <span>Ritual</span>
+                            <strong>Toalla caliente y navaja</strong>
+                        </article>
+                        <article class="gentleman-mini-card">
+                            <span>Estilo</span>
+                            <strong>Cortes sobrios con presencia</strong>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Anterior">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Siguiente">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+        <div class="gentleman-marquee">
+            <span>Classic Cuts</span>
+            <span>Beard Tailoring</span>
+            <span>Hot Towel Shave</span>
+            <span>Private Grooming Experience</span>
+        </div>
     </div>
 </header>
