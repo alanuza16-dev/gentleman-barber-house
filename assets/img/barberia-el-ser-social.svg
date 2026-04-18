@@ -1,18 +1,17 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#110F0E"/>
-  <circle cx="837" cy="290" r="162" fill="#B8744F" fill-opacity="0.18"/>
-  <circle cx="263" cy="160" r="118" fill="#E6C09D" fill-opacity="0.09"/>
-  <g transform="translate(92 160)">
-    <rect width="250" height="250" rx="54" fill="#1C1917"/>
-    <path d="M45 184C62 160 71 137 72 114C73 83 58 66 56 39C53 5 85 -13 123 -10C157 -7 195 13 193 55C192 74 178 84 173 103C167 127 178 148 195 170C167 159 147 149 123 149C96 149 71 161 45 184Z" fill="#F6EFE5"/>
-    <path d="M75 97C85 114 100 128 119 139C127 124 128 110 122 97C113 78 99 68 89 48C85 40 82 29 86 19C97 24 106 30 117 36C139 47 155 53 169 70C175 77 179 86 179 96C169 90 161 91 153 95C146 98 139 108 136 118C130 112 125 106 122 99C117 108 112 116 105 122C92 116 81 108 75 97Z" fill="#161412"/>
-    <path d="M89 48C106 52 129 46 150 52C141 37 127 26 108 17C124 16 140 22 155 32C169 41 178 53 180 70C166 57 152 53 138 50C117 46 103 47 89 48Z" fill="#B8744F"/>
-    <path d="M119 77C129 76 136 80 141 89C131 85 124 87 115 95C117 88 118 82 119 77Z" fill="#F6EFE5"/>
-    <path d="M107 103C115 105 123 110 129 119C120 118 113 121 107 127C104 118 104 110 107 103Z" fill="#F6EFE5"/>
-    <path d="M65 177C88 158 103 154 124 154C146 154 163 162 184 176C164 182 144 186 124 186C104 186 84 183 65 177Z" fill="#B8744F"/>
+  <rect width="1200" height="630" fill="#141110"/>
+  <circle cx="232" cy="154" r="88" fill="#B58C69" fill-opacity="0.10"/>
+  <circle cx="820" cy="274" r="150" fill="#8D5C39" fill-opacity="0.26"/>
+  <g transform="translate(108 174)">
+    <rect x="0" y="0" width="172" height="204" rx="40" fill="#211B18"/>
+    <path d="M38 155C54 132 60 112 61 95C62 71 50 56 48 34C44 1 68 -12 96 -4C127 4 153 24 153 56C153 72 145 86 135 99C125 114 121 131 130 154C117 145 104 141 91 141C73 141 55 146 38 155Z" fill="#F4EFE8"/>
+    <path d="M58 35C72 39 88 38 103 49C101 24 87 7 65 -2C86 -3 106 8 120 24C131 37 137 52 137 67C125 49 111 42 99 38C86 34 72 34 58 35Z" fill="#C68358"/>
+    <path d="M58 54C71 72 86 87 104 102C109 89 109 74 102 58C92 42 79 29 72 11C65 22 65 34 66 45C66 52 64 54 58 54Z" fill="#15110F"/>
+    <path d="M70 58C79 68 86 75 94 85C90 71 95 62 106 54C92 51 81 52 70 58Z" fill="#F4EFE8"/>
+    <path d="M104 104C89 118 76 129 54 135C71 130 89 131 106 138C124 143 139 147 156 150C139 136 123 121 104 104Z" fill="#C68358"/>
   </g>
-  <text x="420" y="254" fill="#E6C09D" font-family="Manrope, Arial, sans-serif" font-size="46" letter-spacing="12">BARBERIA</text>
-  <text x="420" y="372" fill="#F6EFE5" font-family="'Cormorant Garamond', serif" font-size="124" font-style="italic">El Ser</text>
-  <path d="M424 397H844" stroke="#B8744F" stroke-width="5" stroke-linecap="round"/>
-  <text x="424" y="464" fill="#CDBDA8" font-family="Manrope, Arial, sans-serif" font-size="28" letter-spacing="6">DULCE NOMBRE DE CARTAGO</text>
+  <text x="372" y="268" fill="#E7C8A8" font-family="Manrope, Arial, sans-serif" font-size="48" font-weight="500" letter-spacing="12">BARBERIA</text>
+  <text x="372" y="392" fill="#F5EFE7" font-family="'Cormorant Garamond', serif" font-size="126" font-style="italic">El Ser</text>
+  <path d="M374 424H852" stroke="#C68358" stroke-width="5" stroke-linecap="round"/>
+  <text x="374" y="494" fill="#D2BBA0" font-family="Manrope, Arial, sans-serif" font-size="30" letter-spacing="6">DULCE NOMBRE DE CARTAGO</text>
 </svg>
