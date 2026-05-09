@@ -117,14 +117,53 @@ main {
   cursor: pointer;
 }
 
+.brand-button {
+  position: relative;
+  border-radius: 18px;
+  transition: transform 180ms ease, filter 220ms ease;
+}
+
+.brand-button::after {
+  content: "";
+  position: absolute;
+  inset: 18% 42% 18% 0;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(214, 168, 90, 0.16), transparent 68%);
+  opacity: 0.8;
+  filter: blur(18px);
+  pointer-events: none;
+  transition: opacity 220ms ease, filter 220ms ease, transform 220ms ease;
+}
+
+.brand-button:hover {
+  transform: translateY(-1px);
+}
+
+.brand-button:hover::after {
+  opacity: 1;
+  filter: blur(24px);
+  transform: scale(1.04);
+}
+
 .brand img {
+  position: relative;
+  z-index: 1;
   width: 112px;
   height: auto;
-  transition: width 220ms ease, transform 220ms ease;
+  filter:
+    drop-shadow(0 0 10px rgba(214, 168, 90, 0.12))
+    drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
+  transition: width 220ms ease, transform 220ms ease, filter 220ms ease;
 }
 
 .topbar.is-compact .brand img {
   width: 88px;
+}
+
+.brand-button:hover img {
+  filter:
+    drop-shadow(0 0 14px rgba(214, 168, 90, 0.24))
+    drop-shadow(0 10px 16px rgba(0, 0, 0, 0.2));
 }
 
 .brand-copy {
@@ -776,6 +815,10 @@ h3 {
   .brand img,
   .topbar.is-compact .brand img {
     width: 72px;
+  }
+
+  .brand-button::after {
+    inset: 20% 36% 20% 0;
   }
 
   .brand-copy {
