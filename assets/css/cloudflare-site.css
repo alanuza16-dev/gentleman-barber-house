@@ -49,9 +49,14 @@ img {
 }
 
 .site-shell {
+  width: 100%;
+  padding: 22px 0 96px;
+}
+
+.hero,
+main {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 22px 0 96px;
 }
 
 .topbar,
@@ -85,6 +90,9 @@ img {
     box-shadow 220ms ease,
     border-color 220ms ease,
     transform 220ms ease;
+  width: min(1180px, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topbar.is-compact {
@@ -238,6 +246,13 @@ h3 {
 .lead {
   max-width: 62ch;
   margin: 20px 0 0;
+}
+
+.hero-location {
+  margin: -2px 0 18px;
+  color: rgba(247, 239, 228, 0.72);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .button {
@@ -715,8 +730,13 @@ h3 {
 
 @media (max-width: 640px) {
   .site-shell {
-    width: min(100% - 20px, 100%);
     padding-bottom: 56px;
+  }
+
+  .hero,
+  main,
+  .topbar {
+    width: min(100% - 20px, 100%);
   }
 
   h1 {
