@@ -63,7 +63,6 @@ main {
 .topbar,
 .hero-grid,
 .section-grid,
-.service-grid,
 .feature-grid,
 .package-grid,
 .compare-grid {
@@ -233,7 +232,6 @@ h3 {
 
 .lead,
 .section-text,
-.service-card p,
 .feature-panel p,
 .package-summary,
 .package-list li {
@@ -277,13 +275,11 @@ h3 {
 }
 
 .button:hover,
-.service-card:hover,
 .package-card:hover {
   transform: translateY(-2px);
 }
 
 .hero-panel,
-.service-card,
 .feature-panel,
 .package-card {
   background: var(--panel);
@@ -368,24 +364,13 @@ h3 {
   margin-bottom: 28px;
 }
 
-.service-grid,
 .package-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.service-card,
 .feature-panel,
 .package-card {
   border-radius: 28px;
-}
-
-.service-card {
-  padding: 28px;
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.service-card h3 {
-  margin-bottom: 12px;
 }
 
 .packages-section {
@@ -696,7 +681,6 @@ h3 {
 
 @media (max-width: 980px) {
   .hero-grid,
-  .service-grid,
   .package-grid,
   .feature-grid,
   .compare-grid {
@@ -741,21 +725,47 @@ h3 {
   }
 
   .topbar {
+    grid-template-columns: auto auto;
+    gap: 12px;
+    align-items: center;
     padding: 14px;
   }
 
   .hero-panel,
-  .service-card,
   .feature-panel,
   .package-card,
   .highlight-card {
     border-radius: 22px;
   }
 
-  .nav-links button,
-  .nav-actions .button {
+  .brand {
+    gap: 0;
+  }
+
+  .brand img,
+  .topbar.is-compact .brand img {
+    width: 72px;
+  }
+
+  .brand-copy {
+    display: none;
+  }
+
+  .nav-actions {
+    justify-content: flex-end;
     width: 100%;
-    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions .button,
+  .topbar.is-compact .button {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 0.92rem;
+    white-space: nowrap;
   }
 
   .package-toggle {
