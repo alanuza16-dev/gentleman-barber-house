@@ -263,17 +263,9 @@ h3 {
   padding: 0 18px;
 }
 
-.hero-actions-row {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 18px;
-  align-items: center;
-  margin-top: 30px;
-}
-
 .hero-note {
-  margin: 0;
-  max-width: 38ch;
+  margin: 24px 0 0;
+  max-width: 44ch;
   color: rgba(247, 239, 228, 0.7);
   line-height: 1.7;
 }
@@ -701,11 +693,6 @@ h3 {
 
   .hero-grid {
     gap: 32px;
-  }
-
-  .hero-actions-row {
-    grid-template-columns: 1fr;
-    align-items: start;
   }
 }
 
