@@ -53,6 +53,7 @@ img {
   padding: 22px 0 96px;
 }
 
+.topbar,
 .hero,
 main {
   width: min(1180px, calc(100% - 32px));
@@ -90,9 +91,6 @@ main {
     box-shadow 220ms ease,
     border-color 220ms ease,
     transform 220ms ease;
-  width: min(1180px, calc(100% - 32px));
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .topbar.is-compact {
