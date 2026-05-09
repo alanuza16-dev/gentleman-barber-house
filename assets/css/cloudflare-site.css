@@ -147,6 +147,7 @@ main {
 }
 
 .brand img {
+  display: block;
   position: relative;
   z-index: 1;
   width: 112px;
@@ -154,17 +155,20 @@ main {
   filter:
     drop-shadow(0 0 8px rgba(214, 168, 90, 0.1))
     drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
+  transform: translateY(6px);
   transition: width 220ms ease, transform 220ms ease, filter 220ms ease;
 }
 
 .topbar.is-compact .brand img {
   width: 88px;
+  transform: translateY(4px);
 }
 
 .brand-button:hover img {
   filter:
     drop-shadow(0 0 12px rgba(214, 168, 90, 0.2))
     drop-shadow(0 10px 16px rgba(0, 0, 0, 0.2));
+  transform: translateY(6px) scale(1.01);
 }
 
 .brand-copy {
@@ -816,6 +820,7 @@ h3 {
   .brand img,
   .topbar.is-compact .brand img {
     width: 72px;
+    transform: translateY(4px);
   }
 
   .brand-button::after {
