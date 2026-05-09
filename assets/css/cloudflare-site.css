@@ -78,6 +78,23 @@ img {
   background: rgba(17, 15, 14, 0.76);
   backdrop-filter: blur(16px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  transition:
+    padding 220ms ease,
+    top 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease;
+}
+
+.topbar.is-compact {
+  top: 8px;
+  padding: 10px 14px;
+  background: rgba(14, 12, 11, 0.9);
+  border-color: rgba(230, 214, 191, 0.18);
+  box-shadow:
+    0 18px 46px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
 }
 
 .brand {
@@ -98,6 +115,11 @@ img {
 .brand img {
   width: 112px;
   height: auto;
+  transition: width 220ms ease, transform 220ms ease;
+}
+
+.topbar.is-compact .brand img {
+  width: 88px;
 }
 
 .brand-copy {
@@ -135,13 +157,23 @@ img {
   color: var(--muted);
   font-size: 0.88rem;
   font-weight: 600;
-  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease,
+    padding 220ms ease,
+    font-size 220ms ease;
 }
 
 .nav-links button:hover {
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
   transform: translateY(-1px);
+}
+
+.topbar.is-compact .nav-links button {
+  padding: 8px 12px;
+  font-size: 0.82rem;
 }
 
 .hero {
@@ -224,6 +256,11 @@ h3 {
     0 14px 28px rgba(184, 116, 79, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.14);
   transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.topbar.is-compact .button {
+  min-height: 46px;
+  padding: 0 18px;
 }
 
 .hero-actions-row {

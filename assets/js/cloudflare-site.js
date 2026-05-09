@@ -1,6 +1,7 @@
 const revealItems = document.querySelectorAll(".reveal");
 const navButtons = document.querySelectorAll("[data-target]");
 const packageCards = document.querySelectorAll("[data-package-card]");
+const topbar = document.querySelector(".topbar");
 
 if (revealItems.length > 0) {
   const observer = new IntersectionObserver(
@@ -38,6 +39,15 @@ navButtons.forEach((button) => {
     window.history.replaceState({}, "", window.location.pathname);
   });
 });
+
+if (topbar) {
+  const syncTopbarState = () => {
+    topbar.classList.toggle("is-compact", window.scrollY > 28);
+  };
+
+  syncTopbarState();
+  window.addEventListener("scroll", syncTopbarState, { passive: true });
+}
 
 packageCards.forEach((card) => {
   const toggle = card.querySelector("[data-package-toggle]");
