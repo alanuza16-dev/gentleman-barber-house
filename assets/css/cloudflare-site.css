@@ -126,7 +126,7 @@ main {
 .brand-button::after {
   content: "";
   position: absolute;
-  inset: 18% 42% 18% 0;
+  inset: 22% 48% 22% 4%;
   border-radius: 999px;
   background: radial-gradient(circle, rgba(214, 168, 90, 0.16), transparent 68%);
   opacity: 0.8;
@@ -151,7 +151,7 @@ main {
   width: 112px;
   height: auto;
   filter:
-    drop-shadow(0 0 10px rgba(214, 168, 90, 0.12))
+    drop-shadow(0 0 8px rgba(214, 168, 90, 0.1))
     drop-shadow(0 8px 14px rgba(0, 0, 0, 0.18));
   transition: width 220ms ease, transform 220ms ease, filter 220ms ease;
 }
@@ -162,7 +162,7 @@ main {
 
 .brand-button:hover img {
   filter:
-    drop-shadow(0 0 14px rgba(214, 168, 90, 0.24))
+    drop-shadow(0 0 12px rgba(214, 168, 90, 0.2))
     drop-shadow(0 10px 16px rgba(0, 0, 0, 0.2));
 }
 
@@ -818,7 +818,7 @@ h3 {
   }
 
   .brand-button::after {
-    inset: 20% 36% 20% 0;
+    inset: 22% 44% 22% 2%;
   }
 
   .brand-copy {
