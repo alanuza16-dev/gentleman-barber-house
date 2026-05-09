@@ -246,13 +246,6 @@ h3 {
   margin: 20px 0 0;
 }
 
-.hero-location {
-  margin: -2px 0 18px;
-  color: rgba(247, 239, 228, 0.72);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -302,6 +295,7 @@ h3 {
 .hero-highlights {
   display: grid;
   gap: 16px;
+  align-content: start;
 }
 
 .highlight-card {
@@ -333,6 +327,11 @@ h3 {
     radial-gradient(circle at top right, rgba(214, 168, 90, 0.12), transparent 36%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
     rgba(20, 17, 15, 0.9);
+}
+
+.highlight-card-location {
+  min-height: 220px;
+  justify-content: center;
 }
 
 .highlight-label {
