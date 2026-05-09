@@ -6,13 +6,13 @@
   <title>Barberia El Ser | Dulce Nombre de Cartago</title>
   <meta
     name="description"
-    content="Barberia El Ser en Dulce Nombre de Cartago. Corte, barba y detalle con una experiencia premium."
+    content="Barberia El Ser en Dulce Nombre de Cartago. Paquetes premium, corte, barba y detalle con una experiencia de alto nivel."
   >
   <meta name="theme-color" content="#161412">
   <meta property="og:title" content="Barberia El Ser">
   <meta
     property="og:description"
-    content="Imagen impecable, tecnica precisa y una experiencia premium en Dulce Nombre de Cartago."
+    content="Imagen impecable, paquetes mensuales y una experiencia premium en Dulce Nombre de Cartago."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/img/barberia-el-ser-social.png">
@@ -30,20 +30,20 @@
   <div class="site-shell">
     <header class="hero" id="inicio">
       <nav class="topbar">
-        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <button class="brand brand-button" type="button" data-target="inicio" aria-label="Ir al inicio">
           <img src="./assets/img/barberia-el-ser-logo.png" alt="Logo Barberia El Ser">
           <span class="brand-copy">
             <strong>Barberia El Ser</strong>
             <small>Dulce Nombre de Cartago</small>
           </span>
-        </a>
+        </button>
 
         <div class="nav-actions">
           <div class="nav-links" aria-label="Navegacion principal">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#ubicacion">Ubicacion</a>
+            <button type="button" data-target="inicio">Inicio</button>
+            <button type="button" data-target="servicios">Servicios</button>
+            <button type="button" data-target="paquetes">Paquetes</button>
+            <button type="button" data-target="ubicacion">Ubicacion</button>
           </div>
           <a
             class="button"
@@ -61,13 +61,13 @@
           <p class="eyebrow">Precision, presencia y estilo.</p>
           <h1>Una imagen bien hecha se nota antes de hablar.</h1>
           <p class="lead">
-            En <strong>Barberia El Ser</strong> trabajamos cortes, barba y detalle final con una ejecucion
-            limpia, moderna y bien pensada para que salgas con mejor presencia.
+            En <strong>Barberia El Ser</strong> trabajamos corte, barba, cuidado y detalle final con una
+            ejecucion limpia y una experiencia pensada para quienes quieren verse impecables todo el mes.
           </p>
           <ul class="hero-points">
+            <li>Paquetes mensuales con beneficios reales</li>
             <li>Cortes con estructura y acabado limpio</li>
-            <li>Barba perfilada con balance y caracter</li>
-            <li>Ambiente cuidado y atencion puntual</li>
+            <li>Ambiente cuidado, atencion puntual y ejecucion premium</li>
           </ul>
         </div>
 
@@ -87,11 +87,11 @@
       <section class="section section-grid reveal" id="experiencia">
         <div>
           <p class="eyebrow">La experiencia</p>
-          <h2>Una barberia pensada para hacerte ver mejor.</h2>
+          <h2>Una barberia pensada para mantener tu imagen en alto nivel.</h2>
         </div>
         <p class="section-text">
-          Cada servicio se ejecuta con tecnica, lectura del rostro y criterio visual para que el resultado
-          se vea fuerte, limpio y natural desde cualquier angulo.
+          Cada visita se trabaja con lectura del rostro, criterio visual y una ejecucion consistente para que
+          el resultado se vea fuerte, limpio y natural desde cualquier angulo.
         </p>
       </section>
 
@@ -102,7 +102,8 @@
             <h2>Detalle donde realmente importa.</h2>
           </div>
           <p class="section-text">
-            Un enfoque directo, sin exceso: buena mano, buen criterio y un acabado premium.
+            El servicio individual mantiene la precision de la casa, mientras que los paquetes mensuales llevan
+            la experiencia a un nivel superior de cuidado y constancia.
           </p>
         </div>
 
@@ -121,6 +122,93 @@
             <span class="service-tag">Final</span>
             <h3>Acabado impecable</h3>
             <p>El cierre correcto para que el trabajo se vea limpio, solido y elegante al salir.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section packages-section" id="paquetes">
+        <div class="section-grid reveal">
+          <div>
+            <p class="eyebrow">Paquetes</p>
+            <h2>Planes mensuales con presencia propia.</h2>
+          </div>
+          <p class="section-text">
+            Pasa el cursor para sentir el nivel de cada plan y toca la tarjeta para desplegar todo lo que incluye.
+          </p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card package-card-gold reveal is-open" data-package-card>
+            <button class="package-toggle" type="button" aria-expanded="true" data-package-toggle>
+              <span class="package-metal">Premium</span>
+              <span class="package-tier">Nivel dorado</span>
+              <h3>Experiencia completa de mantenimiento premium.</h3>
+              <p class="package-summary">
+                Diseñado para quienes quieren mantener una imagen impecable y recibir un servicio de alto nivel en cada visita.
+              </p>
+              <div class="package-prices">
+                <span>Con barba — ₡45,000</span>
+                <span>Sin barba — ₡35,000</span>
+              </div>
+            </button>
+            <div class="package-details" data-package-details>
+              <ul class="package-list">
+                <li>Hasta 3 servicios completos al mes</li>
+                <li>Corte de cabello</li>
+                <li>Perfilado y arreglo de barba segun el paquete seleccionado</li>
+                <li>Mascarilla facial</li>
+                <li>Lavado con productos premium para el cuidado del cabello y la piel</li>
+                <li>Bebida de cortesia a eleccion: cafe de calidad, batido de la casa o trago al gusto</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="package-card package-card-silver reveal" data-package-card>
+            <button class="package-toggle" type="button" aria-expanded="false" data-package-toggle>
+              <span class="package-metal">Plus</span>
+              <span class="package-tier">Nivel plateado</span>
+              <h3>Constancia, estilo y practicidad todo el mes.</h3>
+              <p class="package-summary">
+                Una opcion mas accesible para mantener tu estilo con regularidad y una experiencia bien cuidada.
+              </p>
+              <div class="package-prices">
+                <span>Con barba — ₡35,000</span>
+                <span>Sin barba — ₡27,500</span>
+              </div>
+            </button>
+            <div class="package-details" data-package-details>
+              <ul class="package-list">
+                <li>Hasta 3 servicios completos al mes</li>
+                <li>Corte de cabello</li>
+                <li>Perfilado y arreglo de barba segun el paquete seleccionado</li>
+                <li>Lavado con productos basicos de cuidado</li>
+                <li>Bebidas basicas de cortesia</li>
+                <li>No incluye mascarillas ni productos premium</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="package-card package-card-bronze reveal" data-package-card>
+            <button class="package-toggle" type="button" aria-expanded="false" data-package-toggle>
+              <span class="package-metal">Individuales</span>
+              <span class="package-tier">Nivel bronce</span>
+              <h3>La firma de la casa en formato puntual.</h3>
+              <p class="package-summary">
+                Para quien busca un servicio directo, bien ejecutado y con la misma precision visual de la barberia.
+              </p>
+              <div class="package-prices">
+                <span>Servicio individual — ₡6,000</span>
+                <span>Corte + barba — ₡10,000</span>
+              </div>
+            </button>
+            <div class="package-details" data-package-details>
+              <ul class="package-list">
+                <li>Atencion individual por visita</li>
+                <li>Ideal para mantenimiento puntual</li>
+                <li>Disponible como corte solo o corte con barba</li>
+                <li>Misma ejecucion limpia y detallada de la casa</li>
+              </ul>
+            </div>
           </article>
         </div>
       </section>
