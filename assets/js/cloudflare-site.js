@@ -46,9 +46,7 @@ packageCards.forEach((card) => {
     return;
   }
 
-  toggle.addEventListener("click", () => {
-    const isOpen = card.classList.contains("is-open");
-
+  const openCard = () => {
     packageCards.forEach((item) => {
       item.classList.remove("is-open");
       const itemToggle = item.querySelector("[data-package-toggle]");
@@ -58,9 +56,25 @@ packageCards.forEach((card) => {
       }
     });
 
-    if (!isOpen) {
-      card.classList.add("is-open");
-      toggle.setAttribute("aria-expanded", "true");
+    card.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = card.classList.contains("is-open");
+
+    if (isOpen) {
+      card.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      return;
+    }
+
+    openCard();
+  });
+
+  card.addEventListener("mouseenter", () => {
+    if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      openCard();
     }
   });
 });

@@ -59,7 +59,8 @@ img {
 .section-grid,
 .service-grid,
 .feature-grid,
-.package-grid {
+.package-grid,
+.compare-grid {
   display: grid;
   gap: 24px;
 }
@@ -343,6 +344,86 @@ h3 {
   align-items: start;
 }
 
+.package-compare {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(17, 15, 14, 0.82);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, 0.28);
+}
+
+.compare-head {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.compare-head h3 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.compare-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.compare-card {
+  min-height: 100%;
+  padding: 22px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.compare-card span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.compare-card strong {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  color: #fbf5ed;
+}
+
+.compare-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.compare-card-gold {
+  border-color: rgba(214, 168, 90, 0.2);
+}
+
+.compare-card-gold span {
+  color: var(--gold-soft);
+}
+
+.compare-card-silver {
+  border-color: rgba(188, 193, 202, 0.18);
+}
+
+.compare-card-silver span {
+  color: var(--silver-soft);
+}
+
+.compare-card-bronze {
+  border-color: rgba(180, 120, 82, 0.18);
+}
+
+.compare-card-bronze span {
+  color: var(--bronze-soft);
+}
+
 .package-card {
   position: relative;
   overflow: hidden;
@@ -565,7 +646,8 @@ h3 {
   .hero-grid,
   .service-grid,
   .package-grid,
-  .feature-grid {
+  .feature-grid,
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 
@@ -633,5 +715,9 @@ h3 {
 
   .package-details {
     padding: 0 22px;
+  }
+
+  .package-compare {
+    padding: 24px 22px;
   }
 }
